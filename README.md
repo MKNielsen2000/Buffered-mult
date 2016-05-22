@@ -1,7 +1,7 @@
 # Buffered-mult
-A simple 2 x 3:1 buffered multiple for eurorack
+A simple, compact 2 x 3:1 buffered multiple for eurorack.
 
-Utilising a tl074 and 1206 smd components to make it cheap and easy for everyone to make. 
+Utilising tl07x opamps and 1206 smd components to make it cheap and easy for everyone to make. 
 
 Status:
 
