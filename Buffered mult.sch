@@ -10065,12 +10065,12 @@ Variants with fatter pads for easier soldering, and the LOCK variant which has 5
 </class>
 </classes>
 <parts>
-<part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1k"/>
-<part name="R2" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1k"/>
-<part name="R3" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1k"/>
-<part name="R4" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1k"/>
-<part name="R5" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1k"/>
-<part name="R6" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1k"/>
+<part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="51"/>
+<part name="R2" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="51"/>
+<part name="R3" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="51"/>
+<part name="R4" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="51"/>
+<part name="R5" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="51"/>
+<part name="R6" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="51"/>
 <part name="C1" library="rcl" deviceset="CPOL-US" device="D" value="47u"/>
 <part name="C13" library="rcl" deviceset="CPOL-US" device="D" value="47u"/>
 <part name="GND4" library="SparkFun" deviceset="GND" device=""/>
@@ -10089,8 +10089,8 @@ Variants with fatter pads for easier soldering, and the LOCK variant which has 5
 <part name="GND7" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND8" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND9" library="SparkFun" deviceset="GND" device=""/>
-<part name="R7" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="4.7m"/>
-<part name="R8" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="4.7m"/>
+<part name="R7" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="10m"/>
+<part name="R8" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="10m"/>
 <part name="GND10" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND11" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND14" library="SparkFun" deviceset="GND" device=""/>
@@ -10117,7 +10117,7 @@ Variants with fatter pads for easier soldering, and the LOCK variant which has 5
 <part name="GND13" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND15" library="SparkFun" deviceset="GND" device=""/>
 <part name="IC3" library="linear" deviceset="TL074" device="PW" value="OPA4171"/>
-<part name="R9" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1k"/>
+<part name="R9" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="51"/>
 <part name="GND16" library="SparkFun" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -10131,6 +10131,7 @@ the following jacks serve as
 a 1:3 mult, otherwise they 
 are 4 outputs part of the 
 total 1:7 mult</text>
+<text x="167.64" y="7.62" size="1.778" layer="91">Inspired by Mutable Instruments LINKS</text>
 </plain>
 <instances>
 <instance part="R1" gate="G$1" x="101.6" y="142.24"/>
@@ -10214,20 +10215,20 @@ total 1:7 mult</text>
 <junction x="40.64" y="144.78"/>
 <wire x1="40.64" y1="144.78" x2="40.64" y2="127" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="127" x2="55.88" y2="127" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="127" x2="40.64" y2="170.18" width="0.1524" layer="91"/>
 <junction x="40.64" y="127"/>
-<wire x1="55.88" y1="170.18" x2="40.64" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="127" x2="40.64" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="27.94" y1="137.16" x2="27.94" y2="144.78" width="0.1524" layer="91"/>
 <junction x="27.94" y="144.78"/>
-<pinref part="IC1" gate="A" pin="-IN"/>
 <pinref part="IN1" gate="G$1" pin="TIP"/>
 <pinref part="IC1" gate="B" pin="+IN"/>
 <pinref part="IC1" gate="C" pin="+IN"/>
 <pinref part="IC1" gate="D" pin="+IN"/>
 <wire x1="40.64" y1="99.06" x2="55.88" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="99.06" x2="55.88" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="144.78" x2="40.64" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="A" pin="+IN"/>
+<wire x1="40.64" y1="165.1" x2="55.88" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -10502,14 +10503,15 @@ total 1:7 mult</text>
 <net name="N$2" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="96.52" y1="167.64" x2="81.28" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="167.64" x2="71.12" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="165.1" x2="55.88" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="154.94" x2="81.28" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="154.94" x2="81.28" y2="167.64" width="0.1524" layer="91"/>
-<junction x="81.28" y="167.64"/>
-<pinref part="IC1" gate="A" pin="+IN"/>
+<wire x1="96.52" y1="167.64" x2="76.2" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="A" pin="OUT"/>
+<wire x1="76.2" y1="167.64" x2="71.12" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="167.64" x2="76.2" y2="180.34" width="0.1524" layer="91"/>
+<junction x="76.2" y="167.64"/>
+<wire x1="76.2" y1="180.34" x2="53.34" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="180.34" x2="53.34" y2="170.18" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="A" pin="-IN"/>
+<wire x1="53.34" y1="170.18" x2="55.88" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">

@@ -599,14 +599,14 @@ design rules under a new name.</description>
 <element name="C3" library="SparkFun-Capacitors" package="1206" value="100n" x="88.59" y="5.24" rot="MR90"/>
 <element name="D1" library="diode" package="SOD123" value="1N5819HW" x="23.34" y="11.36" rot="MR180"/>
 <element name="D2" library="diode" package="SOD123" value="1N5819HW" x="18.54" y="1.66" rot="MR180"/>
-<element name="R1" library="SparkFun-Passives" package="1206" value="1k" x="35.99" y="9.72" rot="MR90"/>
-<element name="R2" library="SparkFun-Passives" package="1206" value="1k" x="49.09" y="10.5" rot="MR90"/>
-<element name="R3" library="SparkFun-Passives" package="1206" value="1k" x="27.89" y="7.58" rot="MR90"/>
-<element name="R4" library="SparkFun-Passives" package="1206" value="1k" x="58.79" y="9.86" rot="MR90"/>
-<element name="R5" library="SparkFun-Passives" package="1206" value="1k" x="81.54" y="11.31" rot="MR180"/>
-<element name="R6" library="SparkFun-Passives" package="1206" value="1k" x="92.62" y="11.21" rot="MR180"/>
-<element name="R7" library="SparkFun-Passives" package="1206" value="4.7m" x="40.9" y="1.21" rot="MR180"/>
-<element name="R8" library="SparkFun-Passives" package="1206" value="4.7m" x="62.41" y="2.52" rot="MR90"/>
+<element name="R1" library="SparkFun-Passives" package="1206" value="51" x="35.99" y="9.72" rot="MR90"/>
+<element name="R2" library="SparkFun-Passives" package="1206" value="51" x="49.09" y="10.5" rot="MR90"/>
+<element name="R3" library="SparkFun-Passives" package="1206" value="51" x="27.89" y="7.58" rot="MR90"/>
+<element name="R4" library="SparkFun-Passives" package="1206" value="51" x="58.79" y="9.86" rot="MR90"/>
+<element name="R5" library="SparkFun-Passives" package="1206" value="51" x="81.54" y="11.31" rot="MR180"/>
+<element name="R6" library="SparkFun-Passives" package="1206" value="51" x="92.62" y="11.21" rot="MR180"/>
+<element name="R7" library="SparkFun-Passives" package="1206" value="10m" x="40.9" y="1.21" rot="MR180"/>
+<element name="R8" library="SparkFun-Passives" package="1206" value="10m" x="62.41" y="2.52" rot="MR90"/>
 <element name="J1" library="MusicThingModular" package="EURO_PWR_HEADER_FAT" value="EURO_POWER_HEADERFAT_PADS" x="5.1" y="9.5" rot="R270"/>
 <element name="FRAME1" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LETTER" x="4.1" y="20.5"/>
 <element name="C5" library="SparkFun-Capacitors" package="1206" value="100n" x="53.8" y="7.2" rot="MR180"/>
@@ -621,12 +621,11 @@ design rules under a new name.</description>
 <element name="IN1" library="pj302m" package="PJ302M" value="PJ302M" x="13.1" y="-0.5" rot="R90"/>
 <element name="IN2/OUT4" library="pj302m" package="PJ302M" value="PJ302M" x="70.6" y="-0.5" rot="R90"/>
 <element name="IC3" library="linear" package="TSSOP14" value="OPA4171" x="81.6" y="7.1" rot="MR90"/>
-<element name="R9" library="SparkFun-Passives" package="1206" value="1k" x="70.3" y="11" rot="MR180"/>
+<element name="R9" library="SparkFun-Passives" package="1206" value="51" x="70.3" y="11" rot="MR180"/>
 </elements>
 <signals>
 <signal name="N$5">
 <contactref element="R7" pad="2"/>
-<contactref element="IC1" pad="2"/>
 <contactref element="IN1" pad="TIP"/>
 <contactref element="IC1" pad="5"/>
 <contactref element="IC1" pad="10"/>
@@ -637,7 +636,6 @@ design rules under a new name.</description>
 <wire x1="42.0624" y1="7.5184" x2="41.2496" y2="7.5184" width="0.2032" layer="16"/>
 <wire x1="42.672" y1="8.128" x2="42.0624" y2="7.5184" width="0.2032" layer="16"/>
 <wire x1="42.672" y1="9.5504" x2="42.672" y2="8.128" width="0.2032" layer="16"/>
-<wire x1="40.8432" y1="9.5504" x2="40.83" y2="9.6178" width="0.2032" layer="16"/>
 <wire x1="42.672" y1="9.5504" x2="42.735" y2="9.6178" width="0.2032" layer="16"/>
 <wire x1="41.4528" y1="4.6736" x2="41.4528" y2="4.2672" width="0.2032" layer="16"/>
 <wire x1="41.8592" y1="5.08" x2="41.4528" y2="4.6736" width="0.2032" layer="16"/>
@@ -662,6 +660,8 @@ design rules under a new name.</description>
 <wire x1="13.0048" y1="15.0368" x2="19.304" y2="8.7376" width="0.2032" layer="1"/>
 <wire x1="13.0048" y1="15.0368" x2="12.9" y2="15.2" width="0.2032" layer="1"/>
 <via x="37.7952" y="8.7376" extent="1-16" drill="0.508"/>
+<contactref element="IC1" pad="3"/>
+<wire x1="40.8432" y1="9.5504" x2="41.465" y2="9.6178" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$7">
 <contactref element="R1" pad="2"/>
@@ -969,7 +969,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$2">
 <contactref element="R3" pad="1"/>
-<contactref element="IC1" pad="3"/>
 <contactref element="IC1" pad="1"/>
 <wire x1="34.1376" y1="9.5504" x2="39.2176" y2="9.5504" width="0.2032" layer="16"/>
 <wire x1="39.2176" y1="9.5504" x2="40.2336" y2="9.5504" width="0.2032" layer="16"/>
@@ -981,9 +980,10 @@ design rules under a new name.</description>
 <wire x1="41.656" y1="8.3312" x2="41.4528" y2="8.5344" width="0.2032" layer="16"/>
 <wire x1="40.4368" y1="8.3312" x2="41.656" y2="8.3312" width="0.2032" layer="1"/>
 <wire x1="39.2176" y1="9.5504" x2="40.4368" y2="8.3312" width="0.2032" layer="1"/>
-<wire x1="41.4528" y1="9.5504" x2="41.465" y2="9.6178" width="0.2032" layer="16"/>
 <via x="41.656" y="8.3312" extent="1-16" drill="0.508"/>
 <via x="39.2176" y="9.5504" extent="1-16" drill="0.508"/>
+<contactref element="IC1" pad="2"/>
+<wire x1="40.2336" y1="9.5504" x2="40.83" y2="9.6178" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$12">
 <contactref element="R6" pad="1"/>
