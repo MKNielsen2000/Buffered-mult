@@ -3,5 +3,5 @@ A simple, compact 2 x 1:3 / 1 x 1:7 buffered multiple for eurorack utilising hig
 
 Status:
 
-75%
-███████▒▒▒
+90%
+███████▒

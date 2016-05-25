@@ -10208,6 +10208,7 @@ Variants with fatter pads for easier soldering, and the LOCK variant which has 5
 </parts>
 <sheets>
 <sheet>
+<description>yo</description>
 <plain>
 <text x="167.64" y="12.7" size="1.778" layer="91">Gilberte / Mads Kjeldgaard</text>
 <text x="218.44" y="-2.54" size="1.778" layer="91">2</text>
