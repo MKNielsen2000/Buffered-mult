@@ -1,6 +1,8 @@
 # Buffered-mult
 A simple, compact 2 x 1:3 / 1 x 1:7 buffered multiple for eurorack utilising high quality OPA4171 opamps for suave sound performance and 1206 components to make it easy for anyone to solder.
 
+This circuit is inspired by [Mutable Instruments LINKS.](http://mutable-instruments.net/modules/links)
+
 ###It works like this:
 
 
