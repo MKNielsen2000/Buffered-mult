@@ -5,10 +5,10 @@ A simple, compact 2 x 1:3 / 1 x 1:7 buffered multiple for eurorack utilising hig
 
 
 #####1:7 mult
-Plug a cable into the IN1 jack it distributes the signal to the other 7 output jacks. 
+Plug a cable into the IN1 jack to get a signal distributed in a 1:7 mult.
 
 #####2 x 1:3 mult
-Plug a cable into IN1 and IN2/OUT4 you get two buffered mults 1:3.
+Plug one cable into IN1 and another into IN2/OUT4 and boom, the signal at each of the two inputs is then distributed in 1:3 mults.
 
 Status:
 
