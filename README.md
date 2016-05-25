@@ -7,7 +7,7 @@ This circuit is inspired by [Mutable Instruments LINKS.](http://mutable-instrume
 
 
 #####1:6 mult
-Plug a cable into the IN1 jack to get a signal distributed in a 1:7 mult.
+Plug a cable into the IN1 jack to get a signal distributed in a 1:out mult.
 
 #####2 x 1:3 mult
 Plug one cable into IN1 and another into IN2/OUT4 and boom, the signal at each of the two inputs is then distributed in 1:3 mults.
